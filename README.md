@@ -1,6 +1,6 @@
 # SIMPLE EXERCISES IN PHP OOP (EDU)
 
-## 1. PHP Library System
+## 1. [PHP Library System](https://github.com/chorobcia09/simple-exercises-in-php-oop/blob/main/1/index.php)
 
 This project demonstrates a simple library management system in PHP using object-oriented programming.
 
@@ -31,7 +31,7 @@ Main functionalities:
 
 ---
 
-## 2. PHP Car and Electric Car Classes
+## 2. [PHP Car and Electric Car Classes](https://github.com/chorobcia09/simple-exercises-in-php-oop/blob/main/2/index.php)
 
 This project demonstrates basic object-oriented programming concepts in PHP with classes representing cars.
 
@@ -59,7 +59,7 @@ Additional features:
 
 ---
 
-## 3. PHP Vehicle Management System
+## 3. [PHP Vehicle Management System](https://github.com/chorobcia09/simple-exercises-in-php-oop/blob/main/3/index.php)
 
 This project demonstrates object-oriented programming concepts in PHP, including interfaces, abstract classes, and inheritance, through a simple vehicle management system.
 
