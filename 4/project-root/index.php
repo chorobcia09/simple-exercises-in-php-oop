@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <?php
+
+    require_once 'classes/Room.php';
+
+    // Create some Room objects
+    $room1 = new Room(101, 'double', 300.00);
+    $room2 = new Room(102, 'single', 200.00);
+    $room3 = new Room(103, 'suite', 500.00);
+
+    // Display room details
+    echo $room1 . "<br>";
+    echo $room2 . "<br>";
+    echo $room3 . "<br>";
+
+    // Check availability status
+    echo "Room 101 availability: " . ($room1->isAvailable() ? "Available" : "Unavailable") . "<br>";
+
+    // Change availability to unavailable
+    $room1->markAsUnavailable();
+    echo "Room 101 after marking as unavailable: " . ($room1->isAvailable() ? "Available" : "Unavailable") . "<br>";
+
+    // Change availability back to available
+    $room1->markAsAvailable();
+    echo "Room 101 after marking as available again: " . ($room1->isAvailable() ? "Available" : "Unavailable") . "<br>";
+
+    ?>
+</body>
+
+</html>
