@@ -11,6 +11,7 @@
     <?php
 
     require_once 'classes/Room.php';
+    require_once 'classes/Guest.php';
 
     // Create some Room objects
     $room1 = new Room(101, 'double', 300.00);
@@ -32,6 +33,16 @@
     // Change availability back to available
     $room1->markAsAvailable();
     echo "Room 101 after marking as available again: " . ($room1->isAvailable() ? "Available" : "Unavailable") . "<br>";
+
+    echo str_repeat("-", 300);
+    echo "<br><br>";
+
+    
+    $guest1 = new Guest("Jan", "Kowalski", "jankowalski@example.com");
+    echo $guest1->__toString();
+    echo "<br>";
+    $guest2 = new Guest("Jan", "Nowak", "wrongmail");
+    echo $guest2->__toString();
 
     ?>
 </body>
