@@ -109,3 +109,52 @@ Manages a collection of vehicles. Methods include:
 - `showAll()` — displays information about all vehicles and simulates starting and stopping them.
 
 ---
+
+## [PHP Hotel Reservations](https://github.com/chorobcia09/simple-exercises-in-php-oop/blob/main/4/project-root/index.php)
+
+A simple hotel reservation system implemented in PHP using object-oriented programming (OOP) principles. This project demonstrates basic OOP concepts such as classes, objects, properties, methods, exception handling, and date management.
+
+### Features
+
+- Define hotel rooms with different types (`single`, `double`, `suite`), prices, and availability.
+- Manage guests with validated email addresses.
+- Create reservations while checking for room availability in specified date ranges.
+- Prevent double booking of rooms.
+- Cancel reservations and update room availability.
+- Display lists of rooms, guests, and reservations.
+- Simple web interface showcasing functionality with PHP and HTML.
+
+### Classes
+
+#### Guest
+
+- Represents a hotel guest.
+- Properties: `name`, `surname`, `email` (validated).
+- String representation includes guest details.
+
+#### Room
+
+- Represents a hotel room.
+- Properties: `number`, `type` (`single`, `double`, `suite`), `pricePerNight`, and availability status.
+- Methods to mark rooms as available or unavailable.
+- String representation shows room details.
+
+#### Reservation
+
+- Represents a booking made by a guest for a room.
+- Stores guest, room, check-in and check-out dates.
+- Calculates number of nights and total price.
+- String representation shows booking summary.
+
+#### Hotel
+
+- Manages collections of rooms and reservations.
+- Methods to add rooms, find available rooms by type and dates.
+- Makes and cancels reservations with availability checks.
+
+### Usage
+
+- The main script initializes a hotel with sample rooms and guests.
+- Demonstrates making reservations and handling booking conflicts.
+- Displays available rooms for given dates.
+- Provides feedback on success or error conditions.
