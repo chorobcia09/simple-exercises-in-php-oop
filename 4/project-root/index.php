@@ -12,6 +12,7 @@
 
     require_once 'classes/Room.php';
     require_once 'classes/Guest.php';
+    require_once 'classes/Reservation.php';
 
     // Create some Room objects
     $room1 = new Room(101, 'double', 300.00);
@@ -41,8 +42,19 @@
     $guest1 = new Guest("Jan", "Kowalski", "jankowalski@example.com");
     echo $guest1->__toString();
     echo "<br>";
-    $guest2 = new Guest("Jan", "Nowak", "wrongmail");
-    echo $guest2->__toString();
+    // $guest2 = new Guest("Jan", "Nowak", "wrongmail");
+    // echo $guest2->__toString();
+
+    echo str_repeat("-", 300);
+    echo "<br><br>";
+
+    $checkIn = new DateTime("2025-06-22");
+    $checkOut = new DateTime("2025-06-30");
+
+    $r1 = new Reservation($guest1, $room1, $checkIn, $checkOut);
+    echo $r1->__toString();
+    
+
 
     ?>
 </body>

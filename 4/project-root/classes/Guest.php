@@ -2,9 +2,9 @@
 
 class Guest
 {
-    protected string $name;
-    protected string $surname;
-    protected string $email;
+    public string $name;
+    public string $surname;
+    public string $email;
 
     public function __construct(string $name, string $surname, string $email)
     {

@@ -2,10 +2,10 @@
 
 class Room
 {
-    protected int $number;
-    protected string $type;
-    protected float $pricePerNight;
-    protected bool $isAvailable = true;
+    public int $number;
+    public string $type;
+    public float $pricePerNight;
+    public bool $isAvailable = true;
 
     public function __construct(int $number, string $type, float $pricePerNight)
     {
