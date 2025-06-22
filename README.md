@@ -110,7 +110,7 @@ Manages a collection of vehicles. Methods include:
 
 ---
 
-## [PHP Hotel Reservations](https://github.com/chorobcia09/simple-exercises-in-php-oop/blob/main/4/project-root/index.php)
+## 4. [PHP Hotel Reservations](https://github.com/chorobcia09/simple-exercises-in-php-oop/blob/main/4/project-root/index.php)
 
 A simple hotel reservation system implemented in PHP using object-oriented programming (OOP) principles. This project demonstrates basic OOP concepts such as classes, objects, properties, methods, exception handling, and date management.
 
