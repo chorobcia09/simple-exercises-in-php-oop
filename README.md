@@ -159,7 +159,7 @@ A simple hotel reservation system implemented in PHP using object-oriented progr
 - Displays available rooms for given dates.
 - Provides feedback on success or error conditions.
 
-## 5. [PHP Bank Account ]
+## 5. [PHP Bank Account](https://github.com/chorobcia09/simple-exercises-in-php-oop/tree/main/5%20-%20bank%20account)
 
 This exercise demonstrates basic Object-Oriented Programming concepts in PHP by implementing a simple bank account system. The solution includes classes that handle bank account operations while maintaining proper encapsulation.
 
