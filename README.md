@@ -158,3 +158,24 @@ A simple hotel reservation system implemented in PHP using object-oriented progr
 - Demonstrates making reservations and handling booking conflicts.
 - Displays available rooms for given dates.
 - Provides feedback on success or error conditions.
+
+## 5. [PHP Bank Account ]
+
+This exercise demonstrates basic Object-Oriented Programming concepts in PHP by implementing a simple bank account system. The solution includes classes that handle bank account operations while maintaining proper encapsulation.
+
+### Features
+
+- Bank account class with balance management
+- Deposit and withdrawal operations
+- Balance validation
+- Example usage demonstrating the functionality
+
+### Installation
+1. Clone the repository or download the files
+2. Make sure you have PHP installed (version 7.4 or higher recommended)
+3. Run the script from command line: `php index.php`
+
+### Code Structure
+- `Account.php` - Main Account class implementation
+- `index.php` - Demonstration of the Account class usage
+
