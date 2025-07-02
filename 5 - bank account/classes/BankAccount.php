@@ -2,8 +2,9 @@
 
 class BankAccount
 {
-    public string $owner;
-    public float $balance;
+    private string $owner;
+    private float $balance;
+    private array $transactions = [];
 
     public function __construct(string $owner, float $balance = 0)
     {
@@ -22,6 +23,8 @@ class BankAccount
         } catch (InvalidArgumentException $e) {
             echo "<br>" . $e->getMessage();
         }
+
+        $this->recordTransaction('deposit', $amount);
     }
 
     public function withdraw(float $amount): void
@@ -44,13 +47,31 @@ class BankAccount
         } catch (Exception $e) {
             echo "<br>Unexpected error: " . $e->getMessage();
         }
+
+        $this->recordTransaction('withdraw', $amount);
     }
 
-    public function getBalance(): float {
+    public function getBalance(): float
+    {
         return $this->balance;
     }
 
-    public function getOwner(): string {
+    public function getOwner(): string
+    {
         return $this->owner;
+    }
+
+    public function recordTransaction(string $type, float $amount)
+    {
+        $this->transactions[] = [
+            "type" => $type,
+            "amount" => $amount,
+            "timestamp" => date("Y-m-d H:i:s"),
+        ];
+    }
+
+    public function getTransactions(): array
+    {
+        return $this->transactions;
     }
 }

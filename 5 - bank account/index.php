@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <?php
     require_once "classes/BankAccount.php";
@@ -14,7 +16,7 @@
     $o1->deposit(50.50);
     echo "<br><br>";
     $o1->deposit(-10);
-    
+
     echo "<br><br>";
 
     $o1->withdraw(500);
@@ -23,8 +25,18 @@
     echo "<br><br>";
     echo $o1->getBalance();
     echo $o1->getOwner();
+    echo "<br><br>";
+
+    $account = new BankAccount("Jan Kowalski");
+    $account->deposit(150);
+    $account->withdraw(50);
+
+    foreach ($account->getTransactions() as $t) {
+        echo "<br>{$t['timestamp']} - {$t['type']}: {$t['amount']}";
+    }
 
 
     ?>
 </body>
+
 </html>
